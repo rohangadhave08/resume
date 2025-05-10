@@ -2,117 +2,223 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohan Gadhave - Resume</title>
-  <link rel="stylesheet" href="resume.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px 0;
+      color: #111;
+    }
+
+    .container {
+      width: 210mm;
+      min-height: 297mm;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding-bottom: 0;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    header {
+      padding: 30px 40px 20px;
+      border-bottom: 2px solid #000;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .header-content p {
+      margin: 8px 0 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    section {
+      display: flex;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+      min-height: 80px;
+    }
+
+    section h2 {
+      width: 240px;
+      margin: 0;
+      background-color: #f2e5d7;
+      padding: 20px;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 600;
+      border-right: 1px solid #aaa;
+      display: flex;
+      align-items: center;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      font-size: 14px;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    ul.two-column {
+      column-count: 2;
+      list-style: disc;
+    }
+
+    a {
+      color: #0645AD;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .projects p strong {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    /* QR Code box style */
+    .qr-box {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .qr-box img {
+      width: 80px;
+      height: 80px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+    }
+
+    .qr-box span {
+      font-size: 13px;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-  <div class="resume-box">
-    <table>
-      <tr class="name-row">
-        <td colspan="2">
-          <h1>Rohan Gadhave</h1>
-          <div class="contact">
-            <span>7888166954</span> • 
-            <span>rohangadhave993@gmail.com</span> • 
-            <span>Pune, Maharashtra 412202</span>
-          </div>
-        </td>
-      </tr>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>Rohan Gadhave</h1>
+        <p>7888166954 • rohangadhave993@gmail.com • Pune, Maharashtra 412202</p>
+      </div>
+    </header>
 
-      <tr>
-        <th>Summary</th>
-        <td>To secure a challenging position within a reputable organization where I can expand my knowledge and skills, while making a significant contribution to the company's success.</td>
-      </tr>
+    <section>
+      <h2>Summary</h2>
+      <div class="content">
+        To secure a challenging position within a reputable organization where I can expand my knowledge and skills, while making a significant contribution to the company’s success.
+      </div>
+    </section>
 
-      <tr>
-        <th>Skills</th>
-        <td>
-          <div class="columns">
-            <ul>
-              <li>Python</li>
-              <li>MS Word</li>
-              <li>MS PowerPoint</li>
-              <li>MS Excel</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <ul>
-              <li>GIT</li>
-              <li>Networking Analyst</li>
-              <li>Teamwork</li>
-              <li>Problem Solving</li>
-              <li>Time Management</li>
-            </ul>
-          </div>
-        </td>
-      </tr>
+    <section>
+      <h2>Skills</h2>
+      <div class="content">
+        <ul class="two-column">
+          <li>Python</li><li>MS Word</li><li>MS PowerPoint</li><li>MS Excel</li>
+          <li>HTML</li><li>CSS</li><li>GIT</li><li>Networking Analyst</li>
+          <li>Teamwork</li><li>Problem Solving</li><li>Time Management</li>
+        </ul>
+      </div>
+    </section>
 
-      <tr>
-        <th>Education And<br>Training</th>
-        <td>
-          <strong>2022</strong><br />
-          <b>10th SSC Exam</b><br />
-          Balaji Convent, Nagpur<br />
-          Percentage : 90.00<br /><br />
-          <strong>2024</strong><br />
-          <b>12th HSC Exam</b><br />
-          Balaji Junior College, Nagpur<br />
-          Percentage : 74.33
-        </td>
-      </tr>
+    <section>
+      <h2>Education And Training</h2>
+      <div class="content">
+        <p><strong>2022</strong><br>
+          <strong>10th SSC Exam</strong><br>
+          <em>Balaji Convent</em>, Nagpur<br>
+          Percentage: 90.00</p>
+        <p><strong>2024</strong><br>
+          <strong>12th HSC Exam</strong><br>
+          <em>Balaji Junior College</em>, Nagpur<br>
+          Percentage: 74.33</p>
+      </div>
+    </section>
 
-      <tr>
-        <th>Languages</th>
-        <td>
-          <ul>
-            <li>Marathi</li>
-            <li>Hindi</li>
-            <li>English</li>
-          </ul>
-        </td>
-      </tr>
+    <section>
+      <h2>Languages</h2>
+      <div class="content">
+        <ul><li>Marathi</li><li>Hindi</li><li>English</li></ul>
+      </div>
+    </section>
 
-      <tr>
-        <th>Hobbies And<br>Interests</th>
-        <td>
-          <ul>
-            <li>Sketching</li>
-            <li>Photography</li>
-          </ul>
-        </td>
-      </tr>
+    <section>
+      <h2>Hobbies And Interests</h2>
+      <div class="content">
+        <ul><li>Sketching</li><li>Photography</li></ul>
+      </div>
+    </section>
 
-      <tr>
-        <th>Personal<br>Information</th>
-        <td>
-          <ul>
-            <li>Date of birth: 18/02/2006</li>
-            <li>Gender: Male</li>
-            <li>Nationality: Indian</li>
-            <li>Marital Status: Single</li>
-          </ul>
-        </td>
-      </tr>
+    <section>
+      <h2>Personal Information</h2>
+      <div class="content">
+        <ul>
+          <li>Date of birth: 18/02/2006</li>
+          <li>Gender: Male</li>
+          <li>Nationality: Indian</li>
+          <li>Marital Status: Single</li>
+        </ul>
+      </div>
+    </section>
 
-      <tr>
-        <th>Websites,<br>Portfolios,<br>Profiles</th>
-        <td>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/rohan-gadhave-48032a350" target="_blank">www.linkedin.com/in/rohan-gadhave-48032a350</a></li>
-            <li><a href="https://github.com/rohangadhave08" target="_blank">https://github.com/rohangadhave08</a></li>
-          </ul>
-        </td>
-      </tr>
+    <section>
+      <h2>Websites, Portfolios, Profiles</h2>
+      <div class="content">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/rohan-gadhave-49032a350" target="_blank">https://www.linkedin.com/in/rohan-gadhave-49032a350</a></li>
+          <li><a href="https://github.com/rohangadhave08" target="_blank">https://github.com/rohangadhave08</a></li>
+        </ul>
+      </div>
+    </section>
 
-      <tr>
-        <th>Projects</th>
-        <td>
-          <b>PMPML Bus Service App</b><br />
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="content">
+        <p><strong>PMPML Bus Service App</strong><br>
           Developed a user-friendly mobile application to assist commuters in accessing real-time PMPML bus schedules, routes, and stop information. Integrated features such as live tracking, route search, estimated arrival times, and user feedback. Focused on improving public transport accessibility and reducing wait times through intuitive UI and efficient backend logic.
-        </td>
-      </tr>
-    </table>
+        </p>
+
+        <!-- QR Code Widget -->
+        <div class="qr-box">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://pmpl-bus-service.netlify.app/&size=100x100" alt="PMPML App QR Code" />
+          <span>Scan this QR to open the PMPML App directly on your phone.</span>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
